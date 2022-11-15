@@ -19,6 +19,7 @@ int	main()
 		alpha[str1[i] -'a']++;
 	for (int i = 0; i < strlen(str2); i++)
 		alpha[str2[i] -'a']--;
+	// 그 과정에서 양수 혹은 음수의 element들을 절댓값으로 만들어서 더함.
 	for (int i = 0; i < 26; i++)
 		result += (abs(alpha[i]));
 	printf("%d", result);
